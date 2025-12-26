@@ -414,7 +414,7 @@ nav .right a span{
 /* Image */
 .postcard img {
   display: block;
-  height: 300px;             /* keep consistent height */
+  height: 420px;             /* keep consistent height */
   width: auto;               /* maintain aspect ratio */
   object-fit: cover;
   margin: 0 20px;            /* center the image itself */
@@ -458,13 +458,7 @@ nav .right a span{
 }
 /* TRAVEL DIARY – IMAGES */
 
-.postcard img {
-  height: 420px;          /* was 300px */
-  width: auto;
-  object-fit: cover;
-  margin: 0 auto;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
+
 @media (max-width: 850px){
   /* SECTION 1 HERO */
   .hero-section .text h2{
