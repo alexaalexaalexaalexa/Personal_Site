@@ -440,6 +440,31 @@ nav .right a span{
 .postcard-caption a:focus {
   text-decoration: underline;
 }
+
+/* TRAVEL DIARY – PHOTO CAPTIONS */
+
+.postcard-caption {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Caption text */
+.postcard-caption p {
+  margin: 0;
+}
+/* TRAVEL DIARY – IMAGES */
+
+.postcard img {
+  height: 420px;          /* was 300px */
+  width: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
 @media (max-width: 850px){
   /* SECTION 1 HERO */
   .hero-section .text h2{
@@ -503,4 +528,10 @@ nav .right a span{
   .Photos{
     padding: 0 20px;
   }
+
+  @media (max-width: 600px) {
+  .postcard img {
+    height: 300px;
+  }
+}
 }
