@@ -414,7 +414,7 @@ nav .right a span{
 /* Image */
 .postcard img {
   display: block;
-  height: 420px;             /* keep consistent height */
+  height: 300px;             /* keep consistent height */
   width: auto;               /* maintain aspect ratio */
   object-fit: cover;
   margin: 0 20px;            /* center the image itself */
