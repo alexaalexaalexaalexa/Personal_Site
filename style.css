@@ -456,8 +456,25 @@ nav .right a span{
 .postcard-caption p {
   margin: 0;
 }
+#travel-postcards .photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;        
+  padding: 0 20px;
+}
 /* TRAVEL DIARY – IMAGES */
-
+.traveldiary-postcard img {
+ display: block;
+  height: 420px;     
+  width: auto;
+  object-fit: cover;
+  margin: 0;         
+  text-align: center;
+  box-shadow: 2px 2px 8px #8a8a8a;
+  
+}
 
 @media (max-width: 850px){
   /* SECTION 1 HERO */
@@ -526,6 +543,15 @@ nav .right a span{
   @media (max-width: 600px) {
   .postcard img {
     height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .traveldiary-postcard img {
+    height: 300px;
+  }
+
+  #travel-postcards .photos{
+    gap: 24px;
   }
 }
 }
