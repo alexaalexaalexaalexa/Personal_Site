@@ -207,6 +207,46 @@ nav .right a span { margin-left: 3px; }
 
 /* Photoshop section */
 .photoshop-section .text { text-align: center; margin-bottom: 20px; }
+/* =========================================================
+   COMPATIBILITY PATCH (keep old HTML class names working)
+   ========================================================= */
+
+/* --- Restore carousel movement for your existing HTML classes --- */
+.photographyimagecarousel,
+.photoshopimagecarousel {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  margin-bottom: 30px;
+  animation: marquee 30s linear infinite;
+}
+
+/* Keep the same distances you previously used */
+.photographyimagecarousel { --marquee-distance: -1545.65px; }
+.photoshopimagecarousel   { --marquee-distance: -1384.53px; }
+
+.photographyimagecarousel img,
+.photoshopimagecarousel img {
+  height: 233px;
+  width: auto;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+/* --- Restore centered homepage section text for your existing wrappers --- */
+.photography-section .text,
+.photoshop-section .text,
+.about-me .text {
+  text-align: center;
+}
+
+.photography-section .text p,
+.photoshop-section .text p,
+.about-me .text p {
+  margin: 0 auto;      /* centers the block */
+  max-width: 900px;
+}
+
 
 /* =========================================================
    CONTACT
